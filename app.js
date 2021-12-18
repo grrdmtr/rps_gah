@@ -183,7 +183,7 @@ function playRound(playerSelection, computerSelection) {
       displayResults(
         `${capitalize(
           playerSelection
-        )} beats ${computerSelection}! Has mankind found its savior??`
+        )} beats ${computerSelection}! Has glory apes found its savior??`
       );
     } else if (playerScore === 4) {
       displayResults(
@@ -215,10 +215,10 @@ function displayResults(str) {
 function declareWinner() {
   rplContent();
   if (playerScore > computerScore) {
-    endDesc.textContent = "You win! Mankind lives another day!!";
+    endDesc.textContent = "You win! Glory Apes live another day!!";
     returnMainBtn.innerText = "Play Again";
   } else {
-    endDesc.textContent = "You lost...who will save mankind now?";
+    endDesc.textContent = "You lost...who will save us now?";
     returnMainBtn.innerText = "Try Again?";
   }
   fadeIn();
